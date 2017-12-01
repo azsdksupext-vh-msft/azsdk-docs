@@ -223,8 +223,9 @@ Set-AzSDKSubscriptionSecurity -SubscriptionId <subscriptionId> -SecurityContactE
         - ContactEmails should be a comma-separated list of emails (e.g., 'abc@microsoft.com, def.microsoft.com')
         - ContactPhone should be a single phone number (e.g., '425-882-8080' or '+91-98765-43210' or '+1-425-882-8080')
 
-When the script starts, it removes existing/previously configured AzSDK artifacts in the subscription such 
+While running command, you may get message that configuration in your subscription is already up to date. You can pass '-Force' parameter to the command, it removes/overwrites previously configured AzSDK artifacts in the subscription such 
 as alerts, RBAC, ARM policies, etc. It also *overwrites* the contact emails and contact phone previously set in Azure Security Center.
+
 
 
 [Back to top…](Readme.md#contents)
